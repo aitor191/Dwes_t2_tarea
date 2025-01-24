@@ -31,7 +31,7 @@
     //Lista de profesores
     echo "<h2>Profesores</h2>";
     foreach ($profesores as $profesor) {
-        echo "<li>$profesor</li><br>";
+        echo "<li>$Profesor</li><br>";
     }
 
     //Lista de asignaturas

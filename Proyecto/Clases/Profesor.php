@@ -1,7 +1,6 @@
 <?php
 
-class Profesor extends Miembro
-{
+class Profesor extends Miembro{
 
     //ATRIBUTOS
 
