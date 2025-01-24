@@ -39,7 +39,7 @@ class Alumno extends Miembro
     }
 
     //matricularseEnAsignatura
-    public function matricularseEnAsignatura(Asignatura $asignatura){
+    public function matricularEnAsignatura(Asignatura $asignatura){
         foreach ($this->asignaturas as $asignaturaMatriculada) {
             if ($asignaturaMatriculada -> getId() === $asignatura -> getId()) {
                 return;
@@ -64,7 +64,9 @@ class Alumno extends Miembro
         ];
         return $alumnos;
     }
-
-    //toString?
+    //toSting
+    public function __toString(): string {
+        return "Nombre: {$this->nombre} {$this->apellidos}, Email: {$this->email}";
+    }
 
 }

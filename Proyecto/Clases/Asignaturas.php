@@ -37,7 +37,7 @@ class Asignatura{
     }
 
     //CREAR ASIGNATURAS DE MUESTRA
-    public function crearAsignaturasDeMuetsra(){
+    public function crearAsignaturasDeMuestra(){
         $asignaturas = [
             new Asignatura(1, "DWES", "7 créditos"),
             new Asignatura(2, "DWEC", "6 créditos"),
@@ -46,6 +46,8 @@ class Asignatura{
         ];
         return $asignaturas;
     }
-
-    //toString?
+    //toString
+    public function __toString(): string {
+        return "Nombre: {$this->nombre}, Créditos: {$this->creditos}";
+    }
 }

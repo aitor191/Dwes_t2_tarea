@@ -34,6 +34,6 @@ class Profesor extends Miembro
 
     //toString
     public function toString(){
-        return "Nombre: $this->nombre, Apellido: $this->apellidos, Email: $this->email";
+        return "Nombre: {$this->nombre} {$this->apellidos}, Email: {$this->email}";
     }
 }

@@ -52,7 +52,7 @@ abstract class Miembro {
 
     //toString
     public function toString (){
-        return "ID: $this->id" . ", Nombre:  $this->nombre" .  ", Apellidos:  . $this->apellidos" . ", Email:  . $this->email";
+        return "Nombre: {$this->nombre} {$this->apellidos}, Email: ({$this->email})";
     }
 
 
